@@ -1,0 +1,14 @@
+{
+  "name": "typst-to-ast",
+  "version": "0.1.0",
+  "files": [
+    "typst_to_ast_bg.wasm",
+    "typst_to_ast.js",
+    "typst_to_ast.d.ts"
+  ],
+  "module": "typst_to_ast.js",
+  "types": "typst_to_ast.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
