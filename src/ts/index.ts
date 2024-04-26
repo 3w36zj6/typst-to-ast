@@ -12,10 +12,10 @@ const TypstSyntaxKindToTextlintASTNodeType = (typstSyntaxKind: string) => {
 	switch (typstSyntaxKind) {
 		/// The contents of a file or content block.
 		case "Markup":
-			return ASTNodeTypes.Document;
+			return ASTNodeTypes.Paragraph;
 		/// Plain text without markup.
 		case "Text":
-			return ASTNodeTypes.Paragraph;
+			return ASTNodeTypes.Str;
 		/// Whitespace. Contains at most one newline in markup, as more indicate a
 		/// paragraph break.
 		case "Space":
